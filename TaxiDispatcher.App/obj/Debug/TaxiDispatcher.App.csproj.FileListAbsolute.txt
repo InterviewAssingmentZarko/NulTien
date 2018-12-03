@@ -1,6 +1,0 @@
-C:\Users\User\Downloads\TaxiDispatcher\TaxiDispatcher.App\bin\Debug\TaxiDispatcher.App.dll
-C:\Users\User\Downloads\TaxiDispatcher\TaxiDispatcher.App\bin\Debug\TaxiDispatcher.App.pdb
-C:\Users\User\Downloads\TaxiDispatcher\TaxiDispatcher.App\obj\Debug\TaxiDispatcher.App.csprojAssemblyReference.cache
-C:\Users\User\Downloads\TaxiDispatcher\TaxiDispatcher.App\obj\Debug\TaxiDispatcher.App.csproj.CoreCompileInputs.cache
-C:\Users\User\Downloads\TaxiDispatcher\TaxiDispatcher.App\obj\Debug\TaxiDispatcher.App.dll
-C:\Users\User\Downloads\TaxiDispatcher\TaxiDispatcher.App\obj\Debug\TaxiDispatcher.App.pdb
