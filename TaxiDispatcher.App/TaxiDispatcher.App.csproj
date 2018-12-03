@@ -42,6 +42,9 @@
   <ItemGroup>
     <Compile Include="Constants.cs" />
     <Compile Include="InMemoryRideDataBase.cs" />
+    <Compile Include="Models\Ride.cs" />
+    <Compile Include="Models\Taxi.cs" />
+    <Compile Include="Models\TaxiDriver.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Scheduler.cs" />
   </ItemGroup>
