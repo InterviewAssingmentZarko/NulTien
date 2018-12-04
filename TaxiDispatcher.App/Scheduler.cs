@@ -55,7 +55,7 @@ namespace TaxiDispatcher.App
             {
                 if (nearestTaxi.Company.Equals(kvp.Key))
                 {
-                    ride.Price = calculatorHelper.CalculatePrice(startLocation, endLocation, kvp.Value);
+                    ride.Price = calculatorHelper.CalculatePrice(startLocation, endLocation, kvp.Value, rideType, time);
                     companyNotExists = false;
                 }
             }
@@ -65,21 +65,11 @@ namespace TaxiDispatcher.App
                 throw new Exception("Ilegal company");
             }
 
-            if (rideType == Constants.InterCity)
-            {
-                ride.Price *= 2;
-            }
-
-            if (time.Hour < 6 || time.Hour > 22)
-            {
-                ride.Price *= 2;
-            }
-
             Console.WriteLine("Ride ordered, price: " + ride.Price.ToString());
             return ride;
         }
 
-        public static Ride CreateRide(int startLocation, int endLocation, Taxi nearestTaxi)
+        public Ride CreateRide(int startLocation, int endLocation, Taxi nearestTaxi)
         {
             Ride ride = new Ride()
             {
