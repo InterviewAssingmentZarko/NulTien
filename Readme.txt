@@ -1,3 +1,11 @@
+There are a few more ideas for refactor, but not enough time :-)
+Issues to resovle:
+- Exception Handling
+- Comparing errors with strings
+- Create tests for methods OrderRide, AcceptRide, GetRideList (Mock InMemoryRideDatabase would have to be created)
+
+
+
 This is a refactoring exercise in C#, meaning you can change internal structure without changing the externally visible behaviour - what console writes on output. 
 Code is doing really simple thing. It manages taxi orderes and stores them in (in memory) database. 
 You are welcome to change both client and app part of the application.
