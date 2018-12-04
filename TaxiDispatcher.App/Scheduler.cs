@@ -110,7 +110,5 @@ namespace TaxiDispatcher.App
 
             return rides;
         }
-
-
     }
 }

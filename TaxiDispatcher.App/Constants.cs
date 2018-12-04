@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace TaxiDispatcher.App
+﻿namespace TaxiDispatcher.App
 
 {
     public static class Constants
@@ -9,6 +6,5 @@ namespace TaxiDispatcher.App
         public const int City = 0;
         public const int InterCity = 1;
         public const int MaximumDistanceFromCustomer = 15;
-        
     }
 }
