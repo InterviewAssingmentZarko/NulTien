@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Constants.cs" />
+    <Compile Include="Helpers\CalculatorHelper.cs" />
     <Compile Include="InMemoryRideDataBase.cs" />
     <Compile Include="Models\Ride.cs" />
     <Compile Include="Models\Taxi.cs" />
