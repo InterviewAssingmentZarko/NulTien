@@ -1,11 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using TaxiDispatcher.App.Helpers;
+using TaxiDispatcher.App.Intefaces;
 using TaxiDispatcher.App.Models;
 
 namespace TaxiDispatcher.App
 {
-    public class Scheduler
+    public class Scheduler : IScheduler
     {
         protected List<Taxi> TaxisList { get; set; }
         protected Dictionary<string, int> PriceMultipliers { get; set; }
@@ -32,7 +33,7 @@ namespace TaxiDispatcher.App
         {
             var calculatorHelper = new CalculatorHelper();
             var nearestTaxi = new Taxi();
-            int minimumDistanceFromCustomer = Constants.MaximumDistanceFromCustomer;
+            var minimumDistanceFromCustomer = Constants.MaximumDistanceFromCustomer;
 
             foreach (Taxi taxi in TaxisList)
             {
@@ -71,7 +72,7 @@ namespace TaxiDispatcher.App
 
         public Ride CreateRide(int startLocation, int endLocation, Taxi nearestTaxi)
         {
-            Ride ride = new Ride()
+            var ride = new Ride()
             {
                 Driver = new TaxiDriver()
             };
@@ -98,11 +99,11 @@ namespace TaxiDispatcher.App
 
         public List<Ride> GetRideList(int driver_id)
         {
-            List<Ride> rides = new List<Ride>();
-            List<int> ids = InMemoryRideDataBase.GetRideIds();
+            var rides = new List<Ride>();
+            var ids = InMemoryRideDataBase.GetRideIds();
             foreach (int id in ids)
             {
-                Ride ride = InMemoryRideDataBase.GetRide(id);
+                var ride = InMemoryRideDataBase.GetRide(id);
                 if (ride.Driver.Id == driver_id)
                     rides.Add(ride);
             }
