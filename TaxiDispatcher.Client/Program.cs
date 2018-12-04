@@ -11,9 +11,8 @@ namespace TaxiDispatcher.Client
     {
         static void Main(string[] args)
         {
-            IUnityContainer container = new UnityContainer();
+            var container = new UnityContainer();
             container.RegisterType<IScheduler, Scheduler>();
-            container.RegisterType<ICalculatorHelper, CalculatorHelper>();
 
             var scheduler = container.Resolve<IScheduler>();
 

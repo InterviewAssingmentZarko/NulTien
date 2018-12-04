@@ -14,9 +14,9 @@ namespace TaxiDispatcher.App.Helpers
             return Math.Abs(taxiLocation - startLocation);
         }
 
-        public int CalculatePrice(int startLocation, int endLocation, int PriceMultiplier, int rideType, DateTime time)
+        public int CalculatePrice(int startLocation, int endLocation, int priceMultiplier, int rideType, DateTime time)
         {
-            var priceResult = PriceMultiplier * Math.Abs(startLocation - endLocation);
+            var priceResult = priceMultiplier * Math.Abs(startLocation - endLocation);
             if (rideType == Constants.InterCity)
             {
                 priceResult *= 2;

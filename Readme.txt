@@ -3,6 +3,7 @@ Issues to resovle:
 - Exception Handling
 - Comparing errors with strings
 - Create tests for methods OrderRide, AcceptRide, GetRideList (Mock InMemoryRideDatabase would have to be created)
+- City/Intercity can be represented with bool
 
 
 
